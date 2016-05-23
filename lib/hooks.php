@@ -150,7 +150,7 @@ class OC_USER_CAS_Hooks
                         /*
                          * Dans le cas d'une création
                          */
-                        $random_password = \OC_Util::generateRandomBytes(20);
+                        $random_password = OCP\Util::generateRandomBytes(20);
                         $userDB->createUser($uid, $tabLdapUser['userpassword']);
                         $userDB->setDisplayName($uid, $DisplayName);
                         /*
